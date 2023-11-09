@@ -2,7 +2,7 @@
     <nav class="d-flex">
         <ul class="nav justify-content-center">
             <li class="nav-item d-flex" v-for="(link, index) in menu" :key="index">
-                <a class="nav-link d-flex align-items-center py-5" :href="link.url" :class="{ 'active': link.current}"> {{ link.text }}</a>
+                <a class="nav-link d-flex align-items-center py-5" :href="link.url" @click="setActiveLink(index)" :class="{ 'active': link.current}" > {{ link.text }}</a>
             </li>
         </ul>
     </nav>
@@ -66,8 +66,16 @@ export default {
                 },
             ]
         }
+    },
+    methods: {
+        setActiveLink(index) {
+            this.menu.forEach((link, i) => {
+                link.current = i === index;
+                });
+            }
+        }
     }
-}
+
 </script>
 
 <style lang="scss" scoped>
