@@ -1,8 +1,8 @@
 <template>
     <nav class="d-flex">
         <ul class="nav justify-content-center">
-            <li class="nav-item d-flex align-items-center" v-for="(link, index) in menu" :key="index">
-                <a class="nav-link py-5" :href="link.url" :class="{ 'active': link.current}"> {{ link.text }}</a>
+            <li class="nav-item d-flex" v-for="(link, index) in menu" :key="index">
+                <a class="nav-link d-flex align-items-center py-5" :href="link.url" :class="{ 'active': link.current}"> {{ link.text }}</a>
             </li>
         </ul>
     </nav>
@@ -83,12 +83,10 @@ export default {
     cursor: pointer;
     border: 10px solid transparent;
 
-
         &.active,
         &:hover{
             color: $link-navbar;
             border-bottom: 10px solid $link-navbar;
-
         };
     }
 

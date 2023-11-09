@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <header class="d-flex justify-content-between align-items-center my-4">
+        <header class="d-flex justify-content-between align-items-center">
       <img src="../assets/images/dc-logo.png" alt="Logo">
       <NavBar />
     </header>
@@ -19,6 +19,6 @@
   </script>
   
   <style lang="scss" scoped>
-
+    
 
   </style>
