@@ -18,23 +18,23 @@ export default {
         return {
             MainMiddleContent: [
                 {
-                    img: 'images/buy-comics-digital-comics.png',
+                    img: '/images/buy-comics-digital-comics.png',
                     text: 'DIGITAL COMICS'
                 },
                 {
-                    img: 'images/buy-comics-merchandise.png',
+                    img: '/images/buy-comics-merchandise.png',
                     text: 'DC MERCHANDISE'
                 },
                 {
-                    img: 'images/buy-comics-subscriptions.png',
+                    img: '/images/buy-comics-subscriptions.png',
                     text: 'SUBSCRIPTION'
                 },
                 {
-                    img: 'images/buy-comics-shop-locator.png',
+                    img: '/images/buy-comics-shop-locator.png',
                     text: 'COMIC SHOP LOCATOR'
                 },
                 {
-                    img: 'images/buy-dc-power-visa.svg',
+                    img: '/images/buy-dc-power-visa.svg',
                     text: 'DIGITAL COMICS'
                 },
                 

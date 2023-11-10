@@ -7,23 +7,18 @@
         <section class="main-middle">
             <MainMiddle />
         </section>
-        <section class="main-bottom">
-            <MainBottom />
-        </section>
     </main>
 </template>
 
 <script>
 import MainTop from './main/MainTop.vue'
 import MainMiddle from './main/MainMiddle.vue'
-import MainBottom from './main/MainBottom.vue'
 
 export default {
     name: 'MainApp',
     components: {
       MainTop,
-      MainMiddle,
-      MainBottom
+      MainMiddle
     }
 };
 </script>

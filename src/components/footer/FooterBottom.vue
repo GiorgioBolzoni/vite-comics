@@ -1,14 +1,14 @@
 <template>
     <div>
         <div class="container">
-            bbbb
+           FooterBottom
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'MainBottom',
+    name: 'FooterBottom',
     data() {
         return {
             
