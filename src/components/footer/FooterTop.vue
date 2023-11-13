@@ -2,7 +2,7 @@
     <div class="bg-footer py-4">
         <div class="container">
                 <div class="row">
-                    <div class="col-3" v-for="item, index in menu" :key="index">
+                    <div class="col-2" v-for="item, index in menu" :key="index">
                         <h4 class="fw-bold">{{ item.title }}</h4>
                         <div>
                             <ul class="justify-content-start">

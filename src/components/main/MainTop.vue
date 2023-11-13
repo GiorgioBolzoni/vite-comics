@@ -1,15 +1,25 @@
 <template>
     <div class="container">
-        <h1>Content goes here</h1>
+        <div class="row">
+            <div class="col-12 col-md-4 col-lg-2" v-for="(tvSerie, index) in tvSeries" :key="index">
+                <CardComponent :img="tvSerie.thumb" :title="tvSerie.series" />
+            </div>
+        </div>
     </div>
 </template>
 
 <script>
+import seriesTV from '../../data/dcComics'
+import CardComponent from '../CardComponent.vue';
+
 export default {
     name: 'MainTop',
-    data() {
-        return {
-            
+    components:{
+        CardComponent
+    },
+    data(){
+        return{
+            tvSeries: seriesTV,
         }
     }
 }
