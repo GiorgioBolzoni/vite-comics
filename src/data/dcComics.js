@@ -72,4 +72,4 @@ const seriesTV = [
       "type": "graphic novel",
   },
 ]
-export default {seriesTV}
+export default seriesTV;
